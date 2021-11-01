@@ -1,0 +1,42 @@
+body{
+
+  background-image: 118753941.jpg;
+
+}
+ .float {
+  padding:50px;
+}
+.main {
+  display: flex;
+}
+.profile {
+  display: flex;justify-content: space-between;
+}
+.main .profile h1 {
+
+  padding-left: 40px;
+
+}
+.main .foto-profile {
+  transform: translateY(-30px) translateX(70px)
+}
+.categories {
+
+  text-align: right; margin-left: 204px;
+
+}
+.display; {
+  list-style-type: none; padding-bottom: 15px;
+}
+li {
+  list-style-type: none;
+}
+. {
+
+  display: flex; justify-content: space-evenly;
+}
+ 
+.sosial media {
+  display: flex; justify-content: space-evenly;
+  
+}

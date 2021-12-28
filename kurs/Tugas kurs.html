@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Kurs</title>
+    <style>
+        table,
+        td,
+        td {
+          border: 3px solid red;
+          height: 40px;
+          width:  40px;
+          border-bottom: blanchedalmond;
+          padding: 10px 20px;
+          background-color: honeydew;
+        }
+      </style>
+    <script>
+        function hitung(){
+            let awal = document.getElementById("masukan").value;
+            let kedua = document.getElementById("kurs").value;
+            document.getElementById("keluaran").value = awal * kedua;
+          }
+    </script>
+</head>
+<body>
+    <fieldset style="background-color: gainsboro;">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table>
+            <tr>
+                <td>Masukan nilai</td>
+                <td>Valas</td>
+                <td>Nilai Rupiah</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="nilai" id="nilai" onchange="hitung()"></td>
+                <td>
+                    <select name="valas" id="valas" onchange="hitung()">
+                        <option value="9915">Dollar US</option>
+                        <option value="13472">Dollar Singapura</option>
+                        <option value="874">Ringgit Malaysia</option>
+                        <option value="120">Yen Jepang</option>
+                        <option value="15888">Euro</option>
+                        <option value="3592">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="text" name="hasil" id="hasil"></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</body>
+</html> 
